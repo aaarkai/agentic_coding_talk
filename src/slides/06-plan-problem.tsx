@@ -21,7 +21,7 @@ export function PlanProblemSlide() {
           <p className="text-sage text-base mb-2">不是：</p>
           <p className="text-forest/70 text-lg mb-3">「我想要 AE86」</p>
           <p className="text-sage text-base mb-2">而是：</p>
-          <p className="text-forest text-lg font-medium">「我需要一辆上过秋名山的赛车…」</p>
+          <p className="text-forest text-lg font-medium">「我需要一辆去跑秋名山的赛车，它需要…」</p>
         </div>
 
         <div className="flex flex-col gap-3">
