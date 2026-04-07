@@ -8,34 +8,34 @@
 
 ### 任务清单
 
-- [ ] 1.1 `git init` 初始化仓库
-- [ ] 1.2 创建 `.gitignore` (node_modules, dist, .env, *.log 等)
-- [ ] 1.3 初始化 Vite + React + TypeScript 项目
+- [x] 1.1 `git init` 初始化仓库
+- [x] 1.2 创建 `.gitignore` (node_modules, dist, .env, *.log 等)
+- [x] 1.3 初始化 Vite + React + TypeScript 项目
   - 创建 `package.json`
   - 创建 `vite.config.ts`
   - 创建 `tsconfig.json`
   - 创建 `tsconfig.node.json`
   - 创建 `index.html`
-- [ ] 1.4 配置 Tailwind CSS 4 (CSS-first @theme)
+- [x] 1.4 配置 Tailwind CSS 4 (CSS-first @theme)
   - 安装 tailwindcss
   - 创建 `src/index.css` 并配置 design tokens
-- [ ] 1.5 创建 `src/lib/slide-types.ts` - TypeScript 类型定义
-- [ ] 1.6 创建 `src/components/SlideProvider.tsx` - 状态管理 Context
-- [ ] 1.7 创建 `src/components/Slide.tsx` - 幻灯片容器组件
-- [ ] 1.8 创建 `src/slides/registry.ts` - 幻灯片注册表
-- [ ] 1.9 创建 `src/slides/01-cover.tsx` - 第一张示例幻灯片
-- [ ] 1.10 创建 `src/App.tsx` - 顶层布局
-- [ ] 1.11 创建 `src/main.tsx` - 应用入口
-- [ ] 1.12 验证最小可运行版本
+- [x] 1.5 创建 `src/lib/slide-types.ts` - TypeScript 类型定义
+- [x] 1.6 创建 `src/components/SlideProvider.tsx` - 状态管理 Context
+- [x] 1.7 创建 `src/components/Slide.tsx` - 幻灯片容器组件
+- [x] 1.8 创建 `src/slides/registry.ts` - 幻灯片注册表
+- [x] 1.9 创建 `src/slides/01-cover.tsx` - 第一张示例幻灯片
+- [x] 1.10 创建 `src/App.tsx` - 顶层布局
+- [x] 1.11 创建 `src/main.tsx` - 应用入口
+- [x] 1.12 验证最小可运行版本
 
 ### 验收标准
 
-| 标准 | 验收方式 |
+| 标准 | 验收状态 |
 |------|----------|
-| `pnpm dev` 成功启动，控制台无报错 | 运行命令，检查终端输出 |
-| 页面显示一张空白幻灯片，背景色为 #faf9f6 (Ivory) | 浏览器打开 `http://localhost:5173`，目视检查 |
-| 热更新正常工作 | 修改 `src/index.css` 中任意样式，保存后浏览器自动刷新 |
-| `pnpm build` 构建成功，无 TypeScript 错误 | 运行命令，检查终端输出 |
+| `pnpm dev` 成功启动，控制台无报错 | ✅ 通过 |
+| 页面显示封面幻灯片，背景色为 #faf9f6 (Ivory) | ✅ 通过 |
+| 热更新正常工作 | ✅ 通过 |
+| `pnpm build` 构建成功，无 TypeScript 错误 | ✅ 通过 |
 
 ---
 
@@ -233,6 +233,7 @@
 
 ## 项目状态
 
-- 当前 Phase: Phase 1
-- 当前任务: 待开始
+- 当前 Phase: Phase 2 — 导航系统
+- 当前任务: 导航系统开发中
 - 最后更新: 2026-04-07
+- Phase 1: ✅ 完成 (2026-04-07)

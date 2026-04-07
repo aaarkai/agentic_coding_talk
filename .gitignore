@@ -11,8 +11,9 @@ build/
 .env.*.local
 
 # IDE
-.vscode/
-.idea/
+.vscode/*
+!.vscode/extensions.json
+.idea
 *.swp
 *.swo
 
@@ -26,6 +27,7 @@ npm-debug.log*
 pnpm-debug.log*
 yarn-debug.log*
 yarn-error.log*
+lerna-debug.log*
 
 # Testing
 coverage/
@@ -35,3 +37,10 @@ coverage/
 .cache/
 .parcel-cache/
 .turbo/
+
+# Editor files
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
