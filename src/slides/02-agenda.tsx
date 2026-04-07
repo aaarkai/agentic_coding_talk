@@ -17,14 +17,14 @@ export function AgendaSlide() {
             </div>
             <span className="text-xl text-forest/85">Harness Engineering — 核心理念</span>
           </div>
-          <div className="flex items-center gap-4 p-4 rounded-xl bg-amber-500/[0.04] border border-amber-600/20">
-            <div className="w-10 h-10 rounded-lg bg-amber-500/[0.10] text-amber-700 flex items-center justify-center shrink-0">
+          <div className="flex items-center gap-4 p-4 rounded-xl bg-forest/[0.03] border border-forest/10">
+            <div className="w-10 h-10 rounded-lg bg-forest/[0.08] text-forest flex items-center justify-center shrink-0">
               <Target size={20} />
             </div>
             <span className="text-xl text-forest/85">PLAN MODE — 问题、标准、方案</span>
           </div>
-          <div className="flex items-center gap-4 p-4 rounded-xl bg-emerald-500/[0.04] border border-emerald-600/20">
-            <div className="w-10 h-10 rounded-lg bg-emerald-500/[0.10] text-emerald-700 flex items-center justify-center shrink-0">
+          <div className="flex items-center gap-4 p-4 rounded-xl bg-forest/[0.03] border border-forest/10">
+            <div className="w-10 h-10 rounded-lg bg-forest/[0.08] text-forest flex items-center justify-center shrink-0">
               <Code2 size={20} />
             </div>
             <span className="text-xl text-forest/85">CODE MODE — 执行、验收、防御</span>
