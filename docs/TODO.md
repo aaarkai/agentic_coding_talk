@@ -123,6 +123,33 @@
 
 ---
 
+## Phase 3.5: Forest Canopy 风格修复
+
+### 任务清单
+
+- [x] 3.5.1 审查并修复 `src/index.css` — 确保 Tailwind tokens 与 style guide 对齐
+- [x] 3.5.2 修复 `src/components/Slide.tsx` — 应用正确的 padding、背景色、文字颜色、字体
+- [x] 3.5.3 审查 `src/slides/01-cover.tsx` — 封面样式正确
+- [x] 3.5.4 审查 `src/slides/02-agenda.tsx` — 目录样式正确
+- [x] 3.5.5 审查 `src/slides/03-core-thesis.tsx` — 核心论点样式正确
+- [x] 3.5.6 审查 `src/slides/04-harness-definition.tsx` — Harness 定义样式正确
+- [x] 3.5.7 审查内容组件文字颜色和字体 (已全部使用正确的 Tailwind tokens)
+- [x] 3.5.8 安装 @tailwindcss/vite 插件确保 CSS 正确编译
+- [x] 3.5.9 修复 CSS @import 顺序消除构建警告
+
+### 验收标准
+
+| 标准 | 验收状态 |
+|------|----------|
+| 背景色为 #faf9f6 (Ivory) | ✅ 通过 (Slide 组件已加 bg-ivory) |
+| 标题字体为 EB Serif Bold, 正文为 Source Sans 3 | ✅ 通过 (@theme 已配置) |
+| 标题颜色 #2d4a2b, 正文 #2d4a2b@85%, 注释 #7d8471 | ✅ 通过 (text-forest, text-forest/85, text-sage) |
+| 幻灯片内边距 ≥ 48px | ✅ 通过 (px-12 py-12 = 48px) |
+| 分隔线为 #7d8471@40% | ✅ 通过 (border-sage/40) |
+| `pnpm build` 构建成功无警告 | ✅ 通过 |
+
+---
+
 ## Phase 4: 动画系统
 
 ### 任务清单
@@ -233,3 +260,4 @@
 - Phase 1: ✅ 完成 (2026-04-07)
 - Phase 2: ✅ 完成 (2026-04-07) — 已知问题: hash 刷新时序竞争，后续统一处理
 - Phase 3: ✅ 完成 (2026-04-07)
+- Phase 3.5: ✅ 完成 (2026-04-07) — Forest Canopy 风格修复

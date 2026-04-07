@@ -1,5 +1,5 @@
-@import "tailwindcss";
 @import url('https://fonts.googleapis.com/css2?family=EB+Serif:ital,wght@0,400;0,700;1,400&family=Source+Sans+3:wght@400;600&display=swap');
+@import "tailwindcss";
 
 @theme {
   --color-forest: #2d4a2b;
