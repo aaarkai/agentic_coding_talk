@@ -29,9 +29,9 @@ export function TwoModesOverviewSlide() {
             <p className="text-sm text-sage font-mono text-center">plan.md → todo.md</p>
           </div>
 
-          <div className="flex flex-col gap-4">
+          <div className="flex flex-col gap-4 bg-forest/[0.04] rounded-2xl p-6">
             <div className="flex items-center gap-3">
-              <SectionHeader icon={<Code2 size={16} />} label="Code Mode" variant="emerald" />
+              <SectionHeader icon={<Code2 size={16} />} label="Code Mode" variant="forest" />
             </div>
             <div className="flex flex-col items-center gap-2">
               <FlowStep label="Phase Dev" />
