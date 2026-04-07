@@ -7,7 +7,7 @@ export function SummarySlide() {
   return (
     <Slide>
       <div className="flex flex-col gap-8 w-full max-w-3xl">
-        <h1 className="font-heading text-5xl font-bold text-forest">
+        <h1 className="font-heading text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-forest">
           总结
         </h1>
         <hr className="border-sage/40" />

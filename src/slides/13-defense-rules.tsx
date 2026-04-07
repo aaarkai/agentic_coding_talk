@@ -7,12 +7,12 @@ export function DefenseRulesSlide() {
   return (
     <Slide>
       <div className="flex flex-col gap-8 w-full max-w-3xl">
-        <h1 className="font-heading text-5xl font-bold text-forest">
+        <h1 className="font-heading text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-forest">
           防御规则
         </h1>
         <hr className="border-sage/40" />
 
-        <div className="grid grid-cols-2 gap-6">
+        <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 sm:gap-6">
           <div className="flex flex-col gap-4">
             <div className="flex items-center gap-3 text-blue-700 font-semibold">
               <Users size={22} />

@@ -9,7 +9,7 @@ export function HarnessDefinitionSlide() {
       <div className="flex flex-col gap-8 w-full max-w-3xl">
         <SectionHeader label="核心概念" variant="forest" />
 
-        <h1 className="font-heading text-5xl font-bold text-forest">
+        <h1 className="font-heading text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-forest">
           Harness Engineering
         </h1>
 
