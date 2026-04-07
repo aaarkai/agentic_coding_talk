@@ -9,7 +9,7 @@ export function MakerCheckerSlide() {
   return (
     <Slide>
       <div className="flex flex-col gap-8 w-full max-w-3xl">
-        <SectionHeader label="防御机制" variant="rose" />
+        <SectionHeader label="防御机制" variant="forest" />
 
         <h1 className="font-heading text-5xl font-bold text-forest">
           Maker-Checker 模式
@@ -43,7 +43,7 @@ export function MakerCheckerSlide() {
           <FlowArrow />
           <FlowStep label="Checker → Review" />
           <FlowArrow />
-          <FlowStep label="Pass / Fail" active />
+          <FlowStep label="Pass / Fail" />
         </div>
       </div>
     </Slide>
