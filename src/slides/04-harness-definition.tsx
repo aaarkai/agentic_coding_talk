@@ -2,8 +2,8 @@ import { Slide } from '../components/Slide';
 
 export function HarnessDefinitionSlide() {
   return (
-    <Slide className="items-start justify-start">
-      <div className="flex flex-col gap-6 w-full">
+    <Slide>
+      <div className="flex flex-col gap-6 w-full max-w-3xl">
         <h1 className="font-heading text-4xl font-bold text-forest">
           Harness Engineering 定义
         </h1>
