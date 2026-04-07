@@ -16,7 +16,7 @@ export function PlanSolutionSlide() {
           </h1>
         </div>
 
-        <p className="text-amber-700 text-xl font-medium">研究量最大的阶段</p>
+        <p className="text-forest text-xl font-medium">研究量最大的阶段</p>
 
         <div className="flex flex-col gap-3 mt-2">
           <h3 className="font-heading text-lg font-semibold text-forest">关键活动</h3>

@@ -15,7 +15,7 @@ export function PlanProblemSlide() {
           </h1>
         </div>
 
-        <p className="text-amber-700 text-xl font-medium">只写问题，不写解法</p>
+        <p className="text-forest text-xl font-medium">只写问题，不写解法</p>
 
         <div className="p-6 rounded-xl border border-forest/10 bg-forest/[0.03]">
           <p className="text-sage text-base mb-2">不是：</p>
