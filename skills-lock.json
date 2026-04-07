@@ -1,0 +1,10 @@
+{
+  "version": 1,
+  "skills": {
+    "deep-research": {
+      "source": "affaan-m/everything-claude-code",
+      "sourceType": "github",
+      "computedHash": "cde6edb0b1a98534e20a5ddc764e5ef40b24238aed960dc9352771a23db31c8b"
+    }
+  }
+}
