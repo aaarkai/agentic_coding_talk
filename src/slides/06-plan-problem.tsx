@@ -9,7 +9,7 @@ export function PlanProblemSlide() {
     <Slide>
       <div className="flex flex-col gap-8 w-full max-w-3xl">
         <div className="flex flex-col items-start gap-3">
-          <SectionHeader icon={<FileText size={18} />} label="Plan Mode · 阶段一" variant="amber" />
+          <SectionHeader icon={<FileText size={18} />} label="Plan Mode · 阶段一" variant="forest" />
           <h1 className="font-heading text-5xl font-bold text-forest">
             问题与边界
           </h1>
