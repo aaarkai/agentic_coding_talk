@@ -1,9 +1,7 @@
 import { Slide } from '../components/Slide';
 import { ComparisonTable } from '../content/ComparisonTable';
-import { Callout } from '../content/Callout';
 import { SectionHeader } from '../components/SectionHeader';
-import { Card } from '../components/Card';
-import { Users, FileText, Bot, ArrowRight } from 'lucide-react';
+import { Users, FileText, Bot, ArrowRight, ArrowLeft } from 'lucide-react';
 
 export function HarnessDefinitionSlide() {
   return (
@@ -19,10 +17,6 @@ export function HarnessDefinitionSlide() {
           通过输入<span className="text-forest font-semibold">语言</span>、<span className="text-forest font-semibold">文档</span>和<span className="text-forest font-semibold">资源</span>来控制 Code Agent 完成工作
         </p>
 
-        <Callout>
-          不是让 AI 做"更快的手指"，而是让 AI 成为你编写的合约的执行者
-        </Callout>
-
         <ComparisonTable
           headerLeft="传统模式"
           headerRight="Harness 模式"
@@ -37,12 +31,50 @@ export function HarnessDefinitionSlide() {
         <div className="flex flex-col items-center gap-4 mt-2">
           <h3 className="font-heading text-lg font-semibold text-forest">Contract 模型</h3>
           <div className="flex items-center gap-6">
-            <Card icon={<Users size={24} />} title="User" desc="意图" accent="blue" className="w-40" />
-            <ArrowRight size={24} className="text-sage flex-shrink-0" />
-            <Card icon={<FileText size={24} />} title="Contract" desc="合同" accent="amber" className="w-40" />
-            <ArrowRight size={24} className="text-sage flex-shrink-0" />
-            <Card icon={<Bot size={24} />} title="Agent" desc="执行" accent="forest" className="w-40" />
+            <div className="flex flex-col items-center gap-2 w-28">
+              <div className="w-11 h-11 rounded-xl bg-forest/[0.08] text-forest flex items-center justify-center">
+                <Users size={24} />
+              </div>
+              <span className="text-sm font-medium text-forest">User</span>
+            </div>
+            <div className="flex flex-col items-center gap-1">
+              <ArrowRight size={24} className="text-sage" />
+              <span className="text-xs text-sage">意图</span>
+            </div>
+            <div className="flex flex-col items-center gap-2 w-28">
+              <div className="w-11 h-11 rounded-xl bg-forest/[0.08] text-forest flex items-center justify-center">
+                <FileText size={24} />
+              </div>
+              <span className="text-sm font-medium text-forest">Contract</span>
+            </div>
+            <div className="flex flex-col items-center gap-1">
+              <ArrowRight size={24} className="text-sage" />
+              <span className="text-xs text-sage">执行</span>
+            </div>
+            <div className="flex flex-col items-center gap-2 w-28">
+              <div className="w-11 h-11 rounded-xl bg-forest/[0.08] text-forest flex items-center justify-center">
+                <Bot size={24} />
+              </div>
+              <span className="text-sm font-medium text-forest">Agent</span>
+            </div>
           </div>
+          <div className="flex items-center gap-6">
+            <div className="w-28" />
+            <div className="flex flex-col items-center gap-1">
+              <ArrowLeft size={24} className="text-sage" />
+              <span className="text-xs text-sage">反馈</span>
+            </div>
+            <div className="w-28" />
+            <div className="flex flex-col items-center gap-1">
+              <ArrowLeft size={24} className="text-sage" />
+              <span className="text-xs text-sage">修正</span>
+            </div>
+            <div className="w-28" />
+          </div>
+          <p className="text-sm text-sage text-center max-w-md mt-2">
+            一份完全能传达想法和意图的合同以便于 Agent 执行，<br />
+            同时 Agent 在擅长的领域补充合同的内容
+          </p>
         </div>
       </div>
     </Slide>
