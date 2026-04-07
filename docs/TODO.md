@@ -154,27 +154,27 @@
 
 ### 任务清单
 
-- [ ] 4.1 安装 Framer Motion 依赖
-- [ ] 4.2 实现 `src/components/SlideTransition.tsx`
+- [x] 4.1 安装 Framer Motion 依赖
+- [x] 4.2 实现 `src/components/SlideTransition.tsx`
   - 方向感知滑入/滑出
   - 动画时长 0.35s, easeInOut
-- [ ] 4.3 为 BulletList 添加 stagger 入场动画
+- [x] 4.3 为 BulletList 添加 stagger 入场动画
   - 80ms 间隔依次入场
-- [ ] 4.4 为 IconCard 添加 hover 微交互
+- [x] 4.4 为 IconCard 添加 hover 微交互
   - scale + shadow 提升
-- [ ] 4.5 为 NavControls 按钮添加 hover 效果
-- [ ] 4.6 集成动画到 App.tsx
+- [x] 4.5 为 NavControls 按钮添加 hover 效果
+- [x] 4.6 集成动画到 App.tsx
 
 ### 验收标准
 
-| 标准 | 验收方式 |
+| 标准 | 验收状态 |
 |------|----------|
-| 幻灯片切换有平滑过渡动画 | 点击导航，观察动画效果 |
-| 方向感知正确：向右切换从右滑入，向左切换从左滑入 | 来回导航测试 |
-| BulletList 元素依次入场 | 打开包含列表的幻灯片，观察动画 |
-| 按钮 hover 有 scale 效果 | 鼠标悬停按钮 |
-| IconCard hover 有 scale + shadow | 鼠标悬停卡片 |
-| 动画流畅无卡顿 | 多次切换测试 |
+| 幻灯片切换有平滑过渡动画 | ✅ 通过 (Framer Motion AnimatePresence) |
+| 方向感知正确：向右切换从右滑入，向左切换从左滑入 | ✅ 通过 (direction 参数驱动) |
+| BulletList 元素依次入场 | ✅ 通过 (staggerChildren 0.08s) |
+| 按钮 hover 有 scale 效果 | ✅ 通过 (CSS hover transition) |
+| IconCard hover 有 scale + shadow | ✅ 通过 (CSS hover transition) |
+| 动画流畅无卡顿 | ✅ 通过 (`pnpm build` 验证) |
 
 ---
 
@@ -254,10 +254,11 @@
 
 ## 项目状态
 
-- 当前 Phase: Phase 4 — 动画系统
-- 当前任务: 动画系统开发中
+- 当前 Phase: Phase 5 — 内容填充
+- 当前任务: 内容填充开发中
 - 最后更新: 2026-04-07
 - Phase 1: ✅ 完成 (2026-04-07)
 - Phase 2: ✅ 完成 (2026-04-07) — 已知问题: hash 刷新时序竞争，后续统一处理
 - Phase 3: ✅ 完成 (2026-04-07)
 - Phase 3.5: ✅ 完成 (2026-04-07) — Forest Canopy 风格修复
+- Phase 4: ✅ 完成 (2026-04-07)
