@@ -12,6 +12,23 @@
   --font-mono: "FreeMono", "Consolas", monospace;
 }
 
+/* Section header color variants */
+@utility section-header-amber {
+  @apply border-amber-600/40 text-amber-700 bg-amber-500/[0.08];
+}
+@utility section-header-emerald {
+  @apply border-emerald-600/40 text-emerald-700 bg-emerald-500/[0.08];
+}
+@utility section-header-blue {
+  @apply border-blue-600/40 text-blue-700 bg-blue-500/[0.08];
+}
+@utility section-header-rose {
+  @apply border-rose-600/40 text-rose-700 bg-rose-500/[0.08];
+}
+@utility section-header-purple {
+  @apply border-purple-600/40 text-purple-700 bg-purple-500/[0.08];
+}
+
 /* Base reset and defaults */
 * {
   margin: 0;

@@ -2,6 +2,7 @@ import type { ReactNode } from 'react';
 
 interface ChecklistItem {
   label: ReactNode;
+  icon?: ReactNode;
 }
 
 interface ChecklistProps {
@@ -31,6 +32,7 @@ export function Checklist({ items, className = '' }: ChecklistProps) {
           </div>
           <span className="text-forest/85">
             <span className="text-olive font-semibold mr-2">Step {index + 1}.</span>
+            {item.icon && <span className="inline-flex items-center mr-2 text-olive">{item.icon}</span>}
             {item.label}
           </span>
         </div>

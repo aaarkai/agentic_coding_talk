@@ -1,15 +1,24 @@
 import { Slide } from '../components/Slide';
 import { ComparisonTable } from '../content/ComparisonTable';
 import { Callout } from '../content/Callout';
+import { AlertTriangle, Eye } from 'lucide-react';
+import { BulletItem } from '../components/BulletItem';
 
 export function CoreThesisSlide() {
   return (
     <Slide>
-      <div className="flex flex-col gap-6 w-full max-w-3xl">
-        <h1 className="font-heading text-4xl font-bold text-forest">
-          Core Thesis
+      <div className="flex flex-col gap-8 w-full max-w-3xl">
+        <h1 className="font-heading text-5xl font-bold text-forest">
+          核心论点
         </h1>
         <hr className="border-sage/40" />
+
+        <p className="text-2xl text-forest/85 leading-relaxed text-center font-light">
+          我们想要<span className="text-forest font-semibold">少量注意力，大型产出</span>
+        </p>
+        <p className="text-2xl text-forest/85 leading-relaxed text-center font-light">
+          实际上<span className="text-rose-600 font-semibold">精力消耗比自己写还大</span>
+        </p>
 
         <ComparisonTable
           headerLeft="期望"
@@ -21,18 +30,15 @@ export function CoreThesisSlide() {
             },
             {
               left: '10x 生产力',
-              right: '千篇一律',
+              right: '千篇一律，生产力递减',
             },
           ]}
         />
 
-        <div className="flex flex-col gap-2 mt-2">
-          <p className="text-forest/85">
-            市场教了什么（但不够）：one-shot prompt、skills/loop/MCP、multi-agent
-          </p>
-          <p className="text-forest/85">
-            市场盲区：没有教我们怎么理解和思考
-          </p>
+        <div className="flex flex-col gap-3 mt-2">
+          <h3 className="font-heading text-lg font-semibold text-forest">市场盲区</h3>
+          <BulletItem icon={<Eye size={18} />}>市场教了 one-shot prompt、skills/MCP、multi-agent</BulletItem>
+          <BulletItem icon={<AlertTriangle size={18} />}>但没有教我们怎么<span className="text-forest font-semibold">理解和思考</span></BulletItem>
         </div>
 
         <Callout>
