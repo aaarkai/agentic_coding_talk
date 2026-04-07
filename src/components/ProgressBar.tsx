@@ -1,6 +1,7 @@
+import { memo } from 'react';
 import { useSlide } from '../components/SlideProvider';
 
-export function ProgressBar() {
+export const ProgressBar = memo(function ProgressBar() {
   const { currentIndex, totalSlides } = useSlide();
   const progress = ((currentIndex + 1) / totalSlides) * 100;
 
@@ -17,4 +18,4 @@ export function ProgressBar() {
       </div>
     </div>
   );
-}
+});

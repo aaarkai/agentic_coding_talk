@@ -8,11 +8,11 @@ import { useHashSync } from './hooks/useHashSync';
 import { useSwipe } from './hooks/useSwipe';
 import { SlideTransition } from './components/SlideTransition';
 
-function SlideRenderer() {
+const SlideRenderer = memo(function SlideRenderer() {
   const { currentIndex } = useSlide();
   const CurrentSlide = slides[currentIndex].component;
   return <CurrentSlide />;
-}
+});
 
 function AppContent() {
   const { currentIndex } = useSlide();

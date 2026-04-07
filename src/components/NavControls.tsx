@@ -1,6 +1,7 @@
+import { memo } from 'react';
 import { useSlide } from '../components/SlideProvider';
 
-export function NavControls() {
+export const NavControls = memo(function NavControls() {
   const { prev, next, isFirst, isLast } = useSlide();
 
   return (
@@ -35,4 +36,4 @@ export function NavControls() {
       </button>
     </div>
   );
-}
+});
