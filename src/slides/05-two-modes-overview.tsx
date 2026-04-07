@@ -15,9 +15,9 @@ export function TwoModesOverviewSlide() {
         <hr className="border-sage/40" />
 
         <div className="grid grid-cols-2 gap-8">
-          <div className="flex flex-col gap-4">
+          <div className="flex flex-col gap-4 bg-forest/[0.04] rounded-2xl p-6">
             <div className="flex items-center gap-3">
-              <SectionHeader icon={<FileText size={16} />} label="Plan Mode" variant="amber" />
+              <SectionHeader icon={<FileText size={16} />} label="Plan Mode" variant="forest" />
             </div>
             <div className="flex flex-col items-center gap-2">
               <FlowStep label="问题与边界" />
