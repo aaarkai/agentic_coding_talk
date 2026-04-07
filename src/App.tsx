@@ -1,4 +1,3 @@
-import { useRef } from 'react';
 import { SlideProvider } from './components/SlideProvider';
 import { slides } from './slides/registry';
 import { useSlide } from './components/SlideProvider';
@@ -16,9 +15,6 @@ function SlideRenderer() {
 
 function AppContent() {
   const { currentIndex } = useSlide();
-  const prevIndex = useRef(currentIndex);
-  const direction = currentIndex > prevIndex.current ? 1 : -1;
-  prevIndex.current = currentIndex;
 
   useKeyboardNav();
   useHashSync();
@@ -26,7 +22,7 @@ function AppContent() {
   return (
     <main className="w-full h-full bg-ivory relative overflow-hidden">
       <ProgressBar />
-      <SlideTransition direction={direction} slideKey={slides[currentIndex].id}>
+      <SlideTransition slideKey={slides[currentIndex].id}>
         <SlideRenderer />
       </SlideTransition>
       <NavControls />

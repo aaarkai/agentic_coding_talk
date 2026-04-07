@@ -3,40 +3,19 @@ import type { ReactNode } from 'react';
 
 interface SlideTransitionProps {
   children: ReactNode;
-  direction: number;
   slideKey: string;
 }
 
-const variants = {
-  enter: (direction: number) => ({
-    x: direction > 0 ? 60 : -60,
-    opacity: 0,
-  }),
-  center: {
-    x: 0,
-    opacity: 1,
-  },
-  exit: (direction: number) => ({
-    x: direction < 0 ? 60 : -60,
-    opacity: 0,
-  }),
-};
-
-export function SlideTransition({ children, direction, slideKey }: SlideTransitionProps) {
+export function SlideTransition({ children, slideKey }: SlideTransitionProps) {
   return (
-    <AnimatePresence initial={false} custom={direction} mode="wait">
+    <AnimatePresence initial={false} mode="wait">
       <motion.div
         key={slideKey}
-        custom={direction}
-        variants={variants}
-        initial="enter"
-        animate="center"
-        exit="exit"
-        transition={{
-          duration: 0.35,
-          ease: 'easeInOut',
-        }}
-        className="w-full h-full"
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        exit={{ opacity: 0 }}
+        transition={{ duration: 0.15, ease: 'easeOut' }}
+        className="w-full h-full flex flex-col"
       >
         {children}
       </motion.div>
