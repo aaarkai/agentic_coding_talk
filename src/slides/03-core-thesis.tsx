@@ -21,16 +21,24 @@ export function CoreThesisSlide() {
         </p>
 
         <ComparisonTable
-          headerLeft="期望"
-          headerRight="现实"
+          headerLeft="我们想要"
+          headerRight="实际上"
           rows={[
             {
-              left: '少量注意力，大型产出',
-              right: '精力消耗比自己写还大',
+              left: '做自己不到的事情',
+              right: '无法控制结果，天差地别',
             },
             {
-              left: '10x 生产力',
-              right: '千篇一律，生产力递减',
+              left: '少量注意力，大型产出',
+              right: '精力消耗比自己写代码还大',
+            },
+            {
+              left: '一个人 10x 生产力',
+              right: '做出来的东西千篇一律',
+            },
+            {
+              left: '十个人 100x 生产力',
+              right: '生产力 = x / 人数',
             },
           ]}
         />
