@@ -32,7 +32,7 @@ export function ContextEngineeringSlide() {
         </div>
 
         <Callout>
-          "干净的厨房"原则：确保 agent 开始工作时信息是有组织的、精确的
+          "干净的厨房"：确保 agent 开始工作时信息是有组织的、精确的
         </Callout>
 
         <div className="mt-2">
