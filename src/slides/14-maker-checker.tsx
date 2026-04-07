@@ -30,7 +30,7 @@ export function MakerCheckerSlide() {
             icon={<Eye size={22} />}
             title="Checker (Auditor)"
             desc="独立 agent，只读权限，基于验收标准审查"
-            accent="blue"
+            accent="forest"
           />
         </div>
 
