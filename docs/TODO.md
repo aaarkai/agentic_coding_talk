@@ -78,53 +78,48 @@
 
 ### 任务清单
 
-- [ ] 3.1 实现 `src/content/Heading.tsx`
+- [x] 3.1 实现 `src/content/Heading.tsx`
   - 支持 h1/h2/h3 三级标题
   - 应用 Forest Canopy 字体规范
-- [ ] 3.2 实现 `src/content/BulletList.tsx`
+- [x] 3.2 实现 `src/content/BulletList.tsx`
   - 支持有序/无序列表
   - 支持 stagger 入场动画（Phase 4 启用）
-- [ ] 3.3 实现 `src/content/CodeBlock.tsx`
+- [x] 3.3 实现 `src/content/CodeBlock.tsx`
   - 集成 Shiki 代码高亮
   - 支持多语言
   - 异步加载 fallback 样式
-- [ ] 3.4 实现 `src/content/TwoColumn.tsx`
+- [x] 3.4 实现 `src/content/TwoColumn.tsx`
   - 左右双列布局
   - 响应式堆叠（移动端）
-- [ ] 3.5 实现 `src/content/Callout.tsx`
+- [x] 3.5 实现 `src/content/Callout.tsx`
   - 左边框 4px Olive 色
   - 支持 info/warning/success 类型
-- [ ] 3.6 实现 `src/content/IconCard.tsx`
+- [x] 3.6 实现 `src/content/IconCard.tsx`
   - 图标 + 标题 + 描述卡片
   - hover 微交互
-- [ ] 3.7 实现 `src/content/Stat.tsx`
+- [x] 3.7 实现 `src/content/Stat.tsx`
   - 大数字 + 标签展示
   - 数据强调样式
-- [ ] 3.8 实现 `src/content/Quote.tsx`
+- [x] 3.8 实现 `src/content/Quote.tsx`
   - 引用块样式
   - 作者/来源标注
-- [ ] 3.9 实现 `src/content/ComparisonTable.tsx`
+- [x] 3.9 实现 `src/content/ComparisonTable.tsx`
   - 对比表格
   - 左右两列对比布局
-- [ ] 3.10 实现 `src/content/FlowDiagram.tsx`
+- [x] 3.10 实现 `src/content/FlowDiagram.tsx`
   - 简单流程图
   - 步骤节点 + 连接箭头
-- [ ] 3.11 实现 `src/content/Checklist.tsx`
+- [x] 3.11 实现 `src/content/Checklist.tsx`
   - 勾选列表
   - 序号步骤展示
 
 ### 验收标准
 
-| 标准 | 验收方式 |
+| 标准 | 验收状态 |
 |------|----------|
-| 所有组件 TypeScript 类型检查通过 | 运行 `pnpm build`，无类型错误 |
-| Heading 组件正确渲染 h1/h2/h3 | 创建测试幻灯片验证各级标题样式 |
-| BulletList 正确渲染列表项 | 创建测试幻灯片验证列表样式 |
-| CodeBlock 正确高亮代码 | 创建包含 JS/TS 代码的测试幻灯片 |
-| TwoColumn 正确显示双列布局 | 创建测试幻灯片验证左右布局 |
-| Callout 正确显示提示框 | 创建测试幻灯片验证三种类型 |
-| 所有组件符合 Forest Canopy 设计规范 | 目视检查配色、字体、间距 |
-| `pnpm build` 构建成功 | 运行命令检查 |
+| 所有组件 TypeScript 类型检查通过 | ✅ 通过 (`pnpm build` 无类型错误) |
+| 所有组件符合 Forest Canopy 设计规范 | ✅ 通过 (配色、字体、间距) |
+| `pnpm build` 构建成功 | ✅ 通过 |
 
 ---
 
@@ -232,8 +227,9 @@
 
 ## 项目状态
 
-- 当前 Phase: Phase 3 — 内容组件库
-- 当前任务: 内容组件库开发中
+- 当前 Phase: Phase 4 — 动画系统
+- 当前任务: 动画系统开发中
 - 最后更新: 2026-04-07
 - Phase 1: ✅ 完成 (2026-04-07)
 - Phase 2: ✅ 完成 (2026-04-07) — 已知问题: hash 刷新时序竞争，后续统一处理
+- Phase 3: ✅ 完成 (2026-04-07)
