@@ -19,28 +19,28 @@ export function TwoModesOverviewSlide() {
             <div className="flex items-center gap-3">
               <SectionHeader icon={<FileText size={16} />} label="Plan Mode" variant="amber" />
             </div>
-            <div className="flex flex-col gap-2">
-              <FlowStep label="问题与边界" active />
-              <FlowArrow />
+            <div className="flex flex-col items-center gap-2">
+              <FlowStep label="问题与边界" />
+              <FlowArrow direction="down" />
               <FlowStep label="成功标准" />
-              <FlowArrow />
+              <FlowArrow direction="down" />
               <FlowStep label="方案与验收" />
             </div>
-            <p className="text-sm text-sage font-mono">plan.md → todo.md</p>
+            <p className="text-sm text-sage font-mono text-center">plan.md → todo.md</p>
           </div>
 
           <div className="flex flex-col gap-4">
             <div className="flex items-center gap-3">
               <SectionHeader icon={<Code2 size={16} />} label="Code Mode" variant="emerald" />
             </div>
-            <div className="flex flex-col gap-2">
-              <FlowStep label="Phase Dev" active />
-              <FlowArrow />
+            <div className="flex flex-col items-center gap-2">
+              <FlowStep label="Phase Dev" />
+              <FlowArrow direction="down" />
               <FlowStep label="Review" />
-              <FlowArrow />
+              <FlowArrow direction="down" />
               <FlowStep label="Verification" />
             </div>
-            <p className="text-sm text-sage font-mono">plan.md + todo.md → phase dev → replan</p>
+            <p className="text-sm text-sage font-mono text-center">plan.md + todo.md → phase dev → replan</p>
           </div>
         </div>
 

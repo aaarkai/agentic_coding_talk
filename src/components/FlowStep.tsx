@@ -1,4 +1,4 @@
-import { ArrowRight } from 'lucide-react';
+import { ArrowRight, ArrowDown } from 'lucide-react';
 
 interface FlowStepProps {
   label: string;
@@ -17,6 +17,11 @@ export function FlowStep({ label, active = false }: FlowStepProps) {
   );
 }
 
-export function FlowArrow() {
-  return <ArrowRight size={20} className="text-sage flex-shrink-0" />;
+interface FlowArrowProps {
+  direction?: 'right' | 'down';
+}
+
+export function FlowArrow({ direction = 'right' }: FlowArrowProps) {
+  const Icon = direction === 'down' ? ArrowDown : ArrowRight;
+  return <Icon size={20} className="text-sage flex-shrink-0" />;
 }
