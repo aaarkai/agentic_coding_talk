@@ -49,3 +49,39 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
+
+/* Print styles for PDF export */
+@media print {
+  html, body {
+    overflow: visible;
+    height: auto;
+  }
+
+  #root {
+    overflow: visible;
+  }
+
+  /* Each slide starts on a new page */
+  .slide-page {
+    page-break-after: always;
+    page-break-inside: avoid;
+  }
+
+  /* Hide navigation UI */
+  .fixed {
+    display: none !important;
+  }
+
+  /* Ensure backgrounds print */
+  * {
+    -webkit-print-color-adjust: exact;
+    print-color-adjust: exact;
+  }
+
+  /* Remove shadows and animations */
+  * {
+    box-shadow: none !important;
+    animation: none !important;
+    transition: none !important;
+  }
+}

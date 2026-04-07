@@ -1,3 +1,4 @@
+import { memo } from 'react';
 import { SlideProvider } from './components/SlideProvider';
 import { slides } from './slides/registry';
 import { useSlide } from './components/SlideProvider';
