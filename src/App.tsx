@@ -5,6 +5,7 @@ import { NavControls } from './components/NavControls';
 import { ProgressBar } from './components/ProgressBar';
 import { useKeyboardNav } from './hooks/useKeyboardNav';
 import { useHashSync } from './hooks/useHashSync';
+import { useSwipe } from './hooks/useSwipe';
 import { SlideTransition } from './components/SlideTransition';
 
 function SlideRenderer() {
@@ -18,6 +19,7 @@ function AppContent() {
 
   useKeyboardNav();
   useHashSync();
+  useSwipe();
 
   return (
     <main className="w-full h-full bg-ivory relative overflow-hidden">
