@@ -25,7 +25,7 @@ export function CoreThesisSlide() {
           headerRight="实际上"
           rows={[
             {
-              left: '做自己不到的事情',
+              left: '做自己做不到的事情',
               right: '无法控制结果，天差地别',
             },
             {
